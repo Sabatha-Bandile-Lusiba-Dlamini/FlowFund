@@ -1,1 +1,4 @@
 "publish/flowfund-23941-firebase-adminsdk-fbsvc-ffba0bedc1.json" 
+.vs/
+bin/
+obj/
