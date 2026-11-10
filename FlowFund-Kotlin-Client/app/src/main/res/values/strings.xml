@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application name -->
+    <string name="app_name">FLOWFUND-PART 2</string>
+
+    <!-- Google sign-in Web client ID -->
+    <string name="default_web_client_id">44142659118-9un3ifgl1reql08584m6olvnuenkq0tg.apps.googleusercontent.com</string>
+
+    <!-- Common buttons -->
+    <string name="login">Log in</string>
+    <string name="logout">Log out</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="retry">Try again</string>
+
+    <!-- Screen titles -->
+    <string name="dashboard">Dashboard</string>
+    <string name="settings">Settings</string>
+    <string name="my_groups">My Groups</string>
+    <string name="contributions">Contributions</string>
+
+    <!-- Status messages -->
+    <string name="loading">Loading...</string>
+    <string name="settings_saved">Settings saved successfully.</string>
+    <string name="no_groups">You have not joined any groups yet.</string>
+    <string name="error_loading">Unable to load data. Please try again.</string>
+</resources>

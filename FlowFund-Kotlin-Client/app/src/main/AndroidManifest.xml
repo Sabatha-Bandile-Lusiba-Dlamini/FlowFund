@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet permission for Firebase and Google Sign-In -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FlowFund"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FLOWFUNDPART2">
+
+        <!-- Statement screens -->
+        <activity
+            android:name=".MyStatementActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GroupStatementActivity"
+            android:exported="false" />
+
+        <!-- Payment and meeting screens -->
+        <activity
+            android:name=".MissedPaymentsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ScheduleMeetingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MeetingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PayoutScheduleActivity"
+            android:exported="false" />
+
+        <!-- Settings screens -->
+        <activity
+            android:name=".GroupSettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <!-- Trades (API-synced) -->
+        <activity
+            android:name=".TradesActivity"
+            android:exported="false" />
+
+        <!-- Journal (API-synced) -->
+        <activity
+            android:name=".JournalActivity"
+            android:exported="false" />
+
+        <!-- Dashboard -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <!-- Biometric authentication -->
+        <activity
+            android:name=".UnlockActivity"
+            android:exported="false" />
+
+        <!-- Login screen: application launcher -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Compose screen -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.FLOWFUNDPART2" />
+
+    </application>
+
+</manifest>

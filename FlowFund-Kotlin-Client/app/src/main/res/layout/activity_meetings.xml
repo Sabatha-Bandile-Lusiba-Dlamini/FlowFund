@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- BACK BUTTON -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:scaleType="centerInside"
+            android:padding="5dp" />
+
+        <!-- Page Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="15dp"
+            android:text="Meetings"
+            android:textColor="#090909"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Birthday Holiday Savings"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="10dp"
+            android:text="Upcoming Meetings"
+            android:textColor="#0F0E0E"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <!-- September Meeting Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="September Meeting"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: 20 September 2026"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: 14:00"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue: Community Hall"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/btnViewUpcomingMeeting"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:text=">"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#0EA730"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="View upcoming meeting"/>
+
+        </LinearLayout>
+
+        <!-- Past Meetings Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Past Meetings"
+            android:textColor="#070707"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <!-- August Meeting -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="August Meeting"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: 15 August 2026"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: 14:00"
+                android:textSize="15sp"
+                android:textColor="#555555"/>
+
+        </LinearLayout>
+
+        <!-- July Meeting -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July Meeting"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: 18 July 2026"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: 14:00"
+                android:textSize="15sp"
+                android:textColor="#555555"/>
+
+        </LinearLayout>
+
+        <!-- June Meeting -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="June Meeting"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: 20 June 2026"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: 14:00"
+                android:textSize="15sp"
+                android:textColor="#555555"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

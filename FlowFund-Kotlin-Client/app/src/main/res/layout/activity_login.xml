@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="28dp">
+
+        <!-- FLOWFUND LOGO -->
+        <ImageView
+            android:id="@+id/imgFlowFundLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="124dp"
+            android:layout_marginTop="70dp"
+            android:contentDescription="FlowFund Logo"
+            android:scaleType="centerInside"
+            android:src="@drawable/flowfund_logo" />
+
+        <!-- FLOWFUND NAME -->
+        <TextView
+            android:id="@+id/txtFlowFund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.08"
+            android:text="FLOWFUND"
+            android:textColor="#090909"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!-- WELCOME -->
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Welcome back.."
+            android:textColor="#0F0E0E"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- DESCRIPTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="35dp"
+            android:text="Sign in to manage your stokvel with ease"
+            android:textColor="#4CAF50"
+            android:textSize="16sp" />
+
+        <!-- GOOGLE SIGN IN BUTTON -->
+        <LinearLayout
+            android:id="@+id/googleSignInButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="#D9D9D9"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- GOOGLE ICON -->
+            <ImageView
+                android:id="@+id/imgGoogleIcon"
+                android:layout_width="36dp"
+                android:layout_height="27dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="Google Icon"
+                android:scaleType="centerInside"
+                android:src="@drawable/google_icon" />
+
+            <!-- GOOGLE BUTTON TEXT -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Google"
+                android:textColor="#202124"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <!-- SECURE LOGIN -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <!-- LOCK ICON ON TOP -->
+            <ImageView
+                android:id="@+id/imgLockIcon"
+                android:layout_width="134dp"
+                android:layout_height="35dp"
+                android:contentDescription="Lock Icon"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_lock" />
+
+            <!-- SECURE LOGIN TEXT -->
+            <TextView
+                android:id="@+id/txtSecureLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Secure login"
+                android:textColor="#100F0F"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- SECURITY DESCRIPTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your financial information is protected"
+            android:textColor="#4CAF50"
+            android:textSize="13sp" />
+
+        <!-- LOADING -->
+        <ProgressBar
+            android:id="@+id/progressLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

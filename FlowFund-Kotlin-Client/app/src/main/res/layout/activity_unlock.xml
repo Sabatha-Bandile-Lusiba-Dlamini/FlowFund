@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="28dp">
+
+        <ImageView
+            android:id="@+id/imgFlowFundLogo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/ic_lock"
+            android:contentDescription="Lock"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/txtUnlockTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Unlock FlowFund"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtUnlockMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Use your fingerprint or Face ID to securely access your account"
+            android:textColor="#687385"
+            android:textSize="16sp" />
+
+        <!-- Biometric authentication -->
+
+        <ImageButton
+            android:id="@+id/btnBiometric"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_fingerprint"
+            android:contentDescription="Fingerprint or Face ID"
+            android:background="@drawable/ic_fingerprint"
+            android:scaleType="centerInside"/>
+
+        <!-- Face ID / Fingerprint Button -->
+
+        <Button
+            android:id="@+id/btnBiometricText"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#0EA730"
+            android:text="Use Face ID / Fingerprint"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Divider -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#D9DEE7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  OR  "
+                android:textColor="#0F0D0D"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#D9DEE7"
+                android:outlineSpotShadowColor="#8E3B3B" />
+
+        </LinearLayout>
+
+        <!-- PIN option -->
+
+        <Button
+            android:id="@+id/btnUsePin"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Use PIN instead"
+            android:textAllCaps="false"
+            android:textColor="#070606"
+            android:textColorHint="#B11414"
+            android:textColorLink="#A01212"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtPin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter PIN"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnUnlockWithPin"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Unlock"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00897B"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressUnlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

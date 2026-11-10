@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- BACK BUTTON -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:scaleType="centerInside"
+            android:padding="5dp" />
+
+        <!-- Logo + Schedule Meeting Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- FlowFund Logo -->
+            <ImageView
+                android:id="@+id/imgFlowFundLogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="FlowFund Logo"
+                android:src="@drawable/flowfund_logo"
+                android:scaleType="fitCenter" />
+
+            <!-- Schedule Meeting -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Schedule Meeting"
+                android:textColor="#070606"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Group Name -->
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="2dp"
+            android:text="Birthday Group Savings"
+            android:textSize="16sp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="6dp"
+            android:text="Title"
+            android:textColor="#172B4D"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtMeetingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="12dp"
+            android:background="#1D434040"
+            android:inputType="textCapSentences"
+            android:padding="15dp" />
+
+        <!-- Date and Time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Date and Time"
+            android:textColor="#172B4D"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtMeetingDate"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginBottom="12dp"
+            android:background="#1D3A3737"
+            android:clickable="true"
+            android:focusable="false"
+            android:padding="15dp" />
+
+        <!-- Location -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Location"
+            android:textColor="#172B4D"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtMeetingLocation"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="12dp"
+            android:background="#1D423F3F"
+            android:inputType="textCapSentences"
+            android:padding="15dp" />
+
+        <!-- Agenda -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            android:text="Agenda"
+            android:textColor="#172B4D"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtMeetingAgenda"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="20dp"
+            android:background="#1D373434"
+            android:gravity="top"
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="15dp" />
+
+        <!-- Schedule Meeting Button -->
+        <Button
+            android:id="@+id/btnSaveMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:backgroundTint="#10DE3E"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="Schedule Meeting"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

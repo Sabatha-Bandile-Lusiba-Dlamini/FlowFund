@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back"
+            android:scaleType="centerInside"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:padding="12dp"
+            app:tint="#172B24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Choose your language"
+            android:textColor="#172B24"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:text="Select the language you’d like to use in FlowFund."
+                android:textSize="14sp"
+                android:textColor="#66756D" />
+
+            <!-- Language Selection -->
+            <RadioGroup
+                android:id="@+id/radioGroupLanguages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- English -->
+                <RadioButton
+                    android:id="@+id/radioEnglish"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#E5F3EA"
+                    android:backgroundTint="#60AB64"
+                    android:buttonTint="#076D3E"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:minWidth="0dp"
+                    android:padding="14dp"
+                    android:text="English"
+                    android:textColor="#172B24"
+                    android:textSize="16sp" />
+
+                <!-- isiZulu -->
+                <RadioButton
+                    android:id="@+id/radioZulu"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:padding="14dp"
+                    android:background="#E5F3EA"
+                    android:buttonTint="#198754"
+                    android:text="isiZulu"
+                    android:textColor="#172B24"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:minWidth="0dp" />
+
+                <!-- Afrikaans -->
+                <RadioButton
+                    android:id="@+id/radioAfrikaans"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:padding="14dp"
+                    android:background="#E5F3EA"
+                    android:buttonTint="#198754"
+                    android:text="Afrikaans"
+                    android:textColor="#172B24"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:minWidth="0dp" />
+
+            </RadioGroup>
+
+            <!-- Language Information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="18dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_lock"
+                    android:contentDescription="Lock" />
+
+                <TextView
+                    android:id="@+id/tvLanguageNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:text="Your language preference can be changed at any time in Settings."
+                    android:textColor="#66756D"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- Tagline -->
+            <TextView
+                android:id="@+id/tvLanguageTagline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Start organizing your daily routines"
+                android:textColor="#198754"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Continue Button -->
+            <Button
+                android:id="@+id/btnSaveLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#198754" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

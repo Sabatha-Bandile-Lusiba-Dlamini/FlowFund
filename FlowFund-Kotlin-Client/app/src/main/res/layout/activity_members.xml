@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back"
+            android:scaleType="centerInside"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:padding="12dp"
+            app:tint="#172B24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Group Members"
+            android:textColor="#172B24"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnAddMember"
+            android:layout_width="74dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:backgroundTint="#198754"
+            android:contentDescription="Add member"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_add" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Group Information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/flowfund_card_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Family Stokvel"
+                    android:textColor="#172B24"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMemberCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3 members"
+                    android:textColor="#66756D" />
+            </LinearLayout>
+
+            <!-- Search Members -->
+            <EditText
+                android:id="@+id/etSearchMembers"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="35dp"
+                android:background="#213C3839"
+                android:hint="Search members"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:singleLine="true"
+                android:textColor="#263238"
+                android:textColorHint="#66756D" />
+
+            <!-- Member 1 -->
+            <LinearLayout
+                android:id="@+id/memberRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:background="@drawable/flowfund_card_background">
+
+                <TextView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/flowfund_avatar"
+                    android:gravity="center"
+                    android:text="TM"
+                    android:textColor="#4CAF50"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thando M."
+                        android:textColor="#172B24"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Treasurer"
+                        android:textColor="#66756D"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnViewMember1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:minWidth="64dp"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    android:textColor="#198754"
+                    android:backgroundTint="#E5F3EA" />
+            </LinearLayout>
+
+            <!-- Member 2 -->
+            <LinearLayout
+                android:id="@+id/memberRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:background="@drawable/flowfund_card_background">
+
+                <TextView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/flowfund_avatar"
+                    android:gravity="center"
+                    android:text="SD"
+                    android:textColor="#00BCD4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sipho D."
+                        android:textColor="#172B24"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Member"
+                        android:textColor="#66756D"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnViewMember2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:minWidth="64dp"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    android:textColor="#198754"
+                    android:backgroundTint="#E5F3EA" />
+            </LinearLayout>
+
+            <!-- Member 3 -->
+            <LinearLayout
+                android:id="@+id/memberRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:background="@drawable/flowfund_card_background">
+
+                <TextView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/flowfund_avatar"
+                    android:gravity="center"
+                    android:text="NN"
+                    android:textColor="#0B1413"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nomsa N."
+                        android:textColor="#172B24"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Member"
+                        android:textColor="#66756D"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnViewMember3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:minWidth="64dp"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    android:textColor="#198754"
+                    android:backgroundTint="#E5F3EA" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

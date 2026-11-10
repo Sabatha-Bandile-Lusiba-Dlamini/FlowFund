@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- BACK BUTTON -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:scaleType="centerInside"
+            android:padding="5dp" />
+
+        <!-- Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="Group Statement"
+            android:textColor="#0B0A0A"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+
+        <!-- Transaction Period Buttons -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="0dp"
+            android:text="Christmas Holiday Trip"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnThisMonth"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00897B"
+                android:text="This Month"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnLastThreeMonths"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                android:backgroundTint="#344F7C"
+                android:text="Last 3 Months"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnCustomPeriod"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00897B"
+                android:text="Custom"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <!-- Custom Date Selection -->
+
+        <LinearLayout
+            android:id="@+id/customDateContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/edtStartDate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Start date"
+                android:focusable="false"
+                android:clickable="true"
+                android:padding="10dp"
+                android:layout_marginEnd="5dp"/>
+
+            <EditText
+                android:id="@+id/edtEndDate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="End date"
+                android:focusable="false"
+                android:clickable="true"
+                android:padding="10dp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+
+        <!-- Statement Totals -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#1D6D6C6C"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Total Contributions -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Contributions"
+                android:textColor="#687385"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtTotalContributions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="R12,000"
+                android:textColor="#00897B"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <!-- Total Payouts -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Payouts"
+                android:textColor="#687385"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtTotalPayouts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="R8,000"
+                android:textColor="#172B4D"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <!-- Current Balance -->
+
+        </LinearLayout>
+
+
+        <!-- Transactions -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transactions"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerGroupTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:layout_marginBottom="20dp"
+            android:background="#1D3C3B3B"
+            android:minHeight="250dp"
+            android:nestedScrollingEnabled="false"
+            tools:itemCount="5" />
+
+
+        <!-- Export PDF -->
+
+        <Button
+            android:id="@+id/btnExportGroupPdf"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="#0DCA15"
+            android:text="Export as PDF"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

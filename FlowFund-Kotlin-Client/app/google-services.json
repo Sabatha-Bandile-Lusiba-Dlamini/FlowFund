@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "44142659118",
+    "project_id": "flowfund-23941",
+    "storage_bucket": "flowfund-23941.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44142659118:android:b3d12122c2ccbb679a81bf",
+        "android_client_info": {
+          "package_name": "com.example.flowfund_part2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44142659118-g9oogmjk58q9m2e8seht1c5qap6ui5og.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flowfund_part2",
+            "certificate_hash": "d07513bc5bd3ed8e67e80f66f6f130b5975e0c8f"
+          }
+        },
+        {
+          "client_id": "44142659118-9un3ifgl1reql08584m6olvnuenkq0tg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBziBHiZoHzG8NSbXuvLQvvjVZEuA6zYgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44142659118-9un3ifgl1reql08584m6olvnuenkq0tg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
