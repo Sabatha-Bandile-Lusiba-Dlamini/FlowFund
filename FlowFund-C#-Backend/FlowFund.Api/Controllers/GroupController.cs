@@ -82,8 +82,8 @@ namespace FlowFund.Api.Controllers
         // the controller knows *which* user is making the request, without
         // ever trusting a userId the client could pass in the request body instead.
         private int CurrentUserId =>
-            int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)
-                ?? User.FindFirstValue("sub")
+            int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier) //claim - key-value pair that reps a piece of info about a user (or entity) issued by a trusted source
+                ?? User.FindFirstValue("sub") //FindFirstValue - returns the string value of the first matching claim
                 ?? throw new UnauthorizedAccessException());
     }
 }
