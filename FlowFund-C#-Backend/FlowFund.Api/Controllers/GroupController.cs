@@ -66,6 +66,7 @@ namespace FlowFund.Api.Controllers
             catch (ConflictException ex) { return Conflict(ex.Message); }
         }
 
+//patch - allows you to edit resources
         [HttpPatch("{groupId}/members/{userId}/role")]
         public async Task<ActionResult<MembershipDto>> UpdateMemberRole(int groupId, int userId, [FromBody] UpdateMemberRoleDto dto)
         {
