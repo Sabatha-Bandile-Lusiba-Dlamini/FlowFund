@@ -13,7 +13,7 @@ namespace FlowFund.Api.Controllers
     [ApiController]
     [Route("api/v1/groups")]
     [Authorize]
-    public class GroupsController : ControllerBase
+    public class GroupsController : ControllerBase //provides core HTTP handling methods and properties without the extra overhead of HTML view rendering
     {
         private readonly IGroupService _groupService;
 
@@ -42,6 +42,8 @@ namespace FlowFund.Api.Controllers
         // "doesn't exist". This is the payoff of defining those exception types
         // instead of just throwing generic Exceptions.
         [HttpPost("{groupId}/members")]
+
+        //FromBody -  automatically deserializes incoming JSON or XML payloads into strongly-typed C# objects
         public async Task<ActionResult<MembershipDto>> AddMember(int groupId, [FromBody] AddMemberDto dto)
         {
             try
